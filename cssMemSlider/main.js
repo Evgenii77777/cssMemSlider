@@ -9,7 +9,9 @@ btnWrapper.addEventListener("click", (e) => {
 
 window.addEventListener("click", (e) => {
   if (idBtn === "1") {
-    container.innerHTML = `<img src=${mems[e.target.id - 1].img} alt=""/>
-        <p>${mems[e.target.id - 1].text}</p>`;
+    container.innerHTML = `<img class="img" src=${
+      mems[e.target.id - 1].img
+    } alt=""/>
+        <p class="text">${mems[e.target.id - 1].text}</p>`;
   }
 });
